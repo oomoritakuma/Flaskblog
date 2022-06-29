@@ -3,9 +3,33 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Flaskblog</title>
+	<style>
+		h1 ,h2{
+			text-align: center;
+		}
+		li{
+			font-size: 27px;
+		}
+		#newCreate{
+			text-align: center;
+			position:fixed;
+			right: 50px;
+			bottom: 50px;
+			padding: 30px 10px; 
+			width:70px;
+			height:30px;
+			border: solid 1px;
+			border-radius: 45px;
+		}
+		table,td{
+			border: solid 1px;
+		}
+		a{
+			margin:5px;
+		}
+	</style>
 </head>
 <body>
 	{% block content %} {% endblock %}
-	<h4>テンプレート</h4>
 </body>
 </html>

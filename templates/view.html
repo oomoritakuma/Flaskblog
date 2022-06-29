@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{post.title}}</h1>
+<article>
+    <table>
+        <tr>
+            <td>作成日時</td>
+            <td>{{post.created_at}}</td>
+        </tr>
+        <tr>
+            <td>内容</td>
+            <td>{{post.body}}</td>
+        </tr>
+    </table>
+    <a href="/{{post.id}}/update" role="button">編集</a>
+    <a href="/{{post.id}}/delete" role="button">削除</a>
+</article>
+
+<a href="{{url_for('index')}}">戻る</a>
+{% endblock %}
